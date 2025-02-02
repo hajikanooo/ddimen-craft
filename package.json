@@ -1,9 +1,9 @@
 {
-  "name": "electron-vite-react",
+  "name": "ddimen-craft",
   "version": "2.2.0",
   "main": "dist-electron/main/index.js",
   "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
+  "author": "hajikano",
   "license": "MIT",
   "private": true,
   "debug": {
@@ -20,9 +20,17 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "electron-updater": "^6.3.9"
+    "electron-updater": "^6.3.9",
+    "@babylonjs/core": "^7.47.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.2",
+    "@mui/material": "^6.4.2",
+    "classnames": "^2.5.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@babylonjs/materials": "^7.47.2",
     "@playwright/test": "^1.48.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
