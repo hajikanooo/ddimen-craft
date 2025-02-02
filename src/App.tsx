@@ -1,11 +1,21 @@
 import "./App.css";
-import Button from "@mui/material/Button";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import { Box, Stack } from "@mui/material";
+import { Playground } from "./core-logic/entities/playground";
 
-// const GameCanvas = () => {
-//   return <canvas></canvas>;
-// };
+const GameCanvas = () => {
+  return (
+    <canvas
+      width={window.innerWidth}
+      height={window.innerHeight}
+      ref={async (canvas) => {
+        if (!canvas) {
+          return;
+        }
+        Playground.InitCanvas({ canvas });
+      }}
+    ></canvas>
+  );
+};
 
 function App() {
   return (
@@ -16,12 +26,9 @@ function App() {
         justifyContent="center"
         spacing={2}
       >
-        {/* <Box>
+        <Box>
           <GameCanvas />
-        </Box> */}
-        <Button variant="contained" endIcon={<AccountBalanceIcon />}>
-          Hello world
-        </Button>
+        </Box>
       </Stack>
     </main>
   );
